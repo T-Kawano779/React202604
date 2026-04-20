@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Tests with Coverage # Vitestでテストとカバレッジを実行
         #run: npm run test:coverage    # package.jsonにテストとカバレッジのスクリプトが定義されていることを前提
-        run: npm run test:all         # package.jsonにテストとカバレッジのスクリプトが定義されていることを前提
+        run: npm run test:coverage    # package.jsonにテストとカバレッジのスクリプトが定義されていることを前提
 
       - name: Upload coverage report  # VitestのカバレッジレポートをGitHub Actionsのアーティファクトとしてアップロード
         uses: actions/upload-artifact@v4
