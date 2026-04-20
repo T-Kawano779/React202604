@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import App from './App'
 
+
+// テストの基本ソース
 describe('App', () => {
   it('Vite + React の見出しが表示される', () => {
     render(<App />)
