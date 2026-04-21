@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`【UI・表示】Greeting コンポーネントのテスト > レンダリング結果が以前の状態と一致すること（スナップショット） 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      こんにちは、Snapshot Userさん
+    </h1>
+    <button>
+      ログインする
+    </button>
+  </div>
+</DocumentFragment>
+`;
