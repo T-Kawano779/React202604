@@ -33,10 +33,5 @@ jobs:
       - name: Upload coverage report  # VitestのカバレッジレポートをGitHub Actionsのアーティファクトとしてアップロード
         uses: actions/upload-artifact@v4
         with:
-          #name: coverage-report # アップロードするアーティファクトの名前
-          #path: coverage/       # Vitestのデフォルトのカバレッジ出力先
-
-          name: vitest-combined-results
-          path: |
-            coverage/
-            html/
+          name: coverage-report # アップロードするアーティファクトの名前
+          path: coverage/       # Vitestのデフォルトのカバレッジ出力先

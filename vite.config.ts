@@ -8,4 +8,7 @@ export default defineConfig({
     globals: true,
     setupFiles: './src/test/setup.ts',
   },
+  define: {
+    'import.meta.vitest': 'undefined', // 【インソーステスト用】通常のビルド時は消す設定
+  },
 })
