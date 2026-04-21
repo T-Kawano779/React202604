@@ -32,4 +32,14 @@ describe('【UI・表示】Greeting コンポーネントのテスト', () => {
     expect(screen.queryByRole('button')).not.toBeInTheDocument()
     expect(screen.getByText('ログイン済みです')).toBeInTheDocument()
   })
+
+    // スナップショットテスト
+  it('レンダリング結果が以前の状態と一致すること（スナップショット）', () => {
+    const { asFragment } = render(
+      <Greeting name="Snapshot User"/>
+    );
+    // 初回実行時に __snapshots__ フォルダが作成され、HTML構造が保存されます
+    expect(asFragment()).toMatchSnapshot();
+  });
+
 })
